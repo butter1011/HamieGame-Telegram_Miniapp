@@ -1,7 +1,7 @@
 {
-	"name": "Flappy UFO",
-	"short_name": "Flappy UFO",
-	"description": "Game inspired by Flappy Bird",
+	"name": "Hamie Game",
+	"short_name": "Hamie Game",
+	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "any",
