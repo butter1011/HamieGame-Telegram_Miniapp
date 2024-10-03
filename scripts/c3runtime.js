@@ -5281,8 +5281,8 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "Gameplay",
 		() => 180,
-		() => 10,
-		() => 0.1,
+		() => 20,
+		() => 0.05,
 		() => "Background",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5294,7 +5294,10 @@ self.C3_ExpressionFuncs = [
 			return () => f0(f1());
 		},
 		() => "",
-		() => 1,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(1, 3);
+		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(5, 10);
@@ -5308,6 +5311,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => -1100,
 		() => 340,
+		() => 1,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
@@ -5323,11 +5327,6 @@ self.C3_ExpressionFuncs = [
 		() => -8,
 		() => 2.5,
 		() => -4,
-		() => 5,
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		},
 		() => 1.3,
 		() => "blue",
 		() => "red",
@@ -5352,6 +5351,11 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			return () => (n0.ExpObject() + f1(1200, 1400));
+		},
+		() => 5,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
