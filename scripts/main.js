@@ -340,5 +340,5 @@ if(enabled)window.addEventListener("beforeunload",this._beforeunload_handler);el
 
 
 // start-export.js
-'use strict';{if(window["C3_Is_Supported"]){const enableWorker=true;window["c3_runtimeInterface"]=new self.RuntimeInterface({useWorker:enableWorker,workerMainUrl:"workermain.js",runtimeScriptList:["scripts/c3main.js"],scriptFolder:"scripts/",exportType:"html5"})}};
+'use strict';{if(window["C3_Is_Supported"]){const enableWorker=false;window["c3_runtimeInterface"]=new self.RuntimeInterface({useWorker:enableWorker,workerMainUrl:"workermain.js",runtimeScriptList:["scripts/c3main.js"],scriptFolder:"scripts/",exportType:"html5"})}};
 

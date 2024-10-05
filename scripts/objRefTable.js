@@ -4,7 +4,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite,
 		C3.Behaviors.Fade,
 		C3.Behaviors.Sin,
-		C3.Plugins.Arr,
 		C3.Behaviors.Tween,
 		C3.Plugins.Particles,
 		C3.Behaviors.Pathfinding,
@@ -17,6 +16,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage,
 		C3.Plugins.Audio,
 		C3.Plugins.Browser,
+		C3.Plugins.AJAX,
+		C3.Plugins.Arr,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.ResetGlobals,
@@ -63,6 +64,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.LocalStorage.Acts.CheckItemExists,
+		C3.ScriptsInEvents.EventMenu_Event2_Act4,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.LocalStorage.Cnds.OnItemExists,
 		C3.Plugins.LocalStorage.Acts.GetItem,
@@ -85,7 +87,6 @@ self.C3_JsPropNameTable = [
 	{Sprite8: 0},
 	{background: 0},
 	{MarginWall: 0},
-	{Array: 0},
 	{BGEffect: 0},
 	{ExplosionAdditive: 0},
 	{ExplosionScreen: 0},
@@ -143,12 +144,18 @@ self.C3_JsPropNameTable = [
 	{LocalStorage: 0},
 	{Audio: 0},
 	{Browser: 0},
+	{AJAX: 0},
+	{Array: 0},
 	{SpriteFonts: 0},
 	{var_state: 0},
 	{var_score: 0},
 	{var_best: 0},
 	{isLightning: 0},
-	{Selectedcolor: 0}
+	{Selectedcolor: 0},
+	{telegramId: 0},
+	{firstName: 0},
+	{userName: 0},
+	{lastName: 0}
 ];
 
 self.InstanceType = {
@@ -159,7 +166,6 @@ self.InstanceType = {
 	Sprite8: class extends self.ISpriteInstance {},
 	background: class extends self.ISpriteInstance {},
 	MarginWall: class extends self.ISpriteInstance {},
-	Array: class extends self.IArrayInstance {},
 	BGEffect: class extends self.ISpriteInstance {},
 	ExplosionAdditive: class extends self.ISpriteInstance {},
 	ExplosionScreen: class extends self.ISpriteInstance {},
@@ -207,5 +213,7 @@ self.InstanceType = {
 	LocalStorage: class extends self.IInstance {},
 	Audio: class extends self.IInstance {},
 	Browser: class extends self.IInstance {},
+	AJAX: class extends self.IInstance {},
+	Array: class extends self.IArrayInstance {},
 	SpriteFonts: class extends self.ISpriteFontInstance {}
 }
