@@ -25,6 +25,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.ResetGlobals,
+		C3.ScriptsInEvents.EventGameplay_Event3_Act3,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.MoveToTop,
 		C3.Plugins.Sprite.Acts.MoveAtAngle,
