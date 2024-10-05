@@ -5454,15 +5454,20 @@ self.C3_ExpressionFuncs = [
 		() => "userName",
 		() => "lastName",
 		() => "InitUser",
-		() => "http://localhost:3000/api/v1/user",
+		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
 		() => "Menu",
 		() => "score_flappyufo",
 		() => "Loading",
 		() => 0.01,
 		() => "SCORE",
+		() => "http://localhost:3000/api/v1/user",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject("user.bestScore");
 		},
 		() => 2.4
 ];
