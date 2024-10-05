@@ -3,6 +3,19 @@
 
 const scriptsInEvents = {
 
+	async EventGameplay_Event3_Act3(runtime, localVars)
+	{
+		if (window.Telegram.WebApp) {
+			Telegram.WebApp.ready();
+			window.Telegram.WebApp.enableClosingConfirmation();
+			// Get the Telegram UserInfo
+			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
+		
+			// Init the global variables
+			runtime.globalVars.telegramId = telegramId;
+		}
+	},
+
 	async EventGameplay_Event10_Act1(runtime, localVars)
 	{
 		runtime.callFunction("updateData");
