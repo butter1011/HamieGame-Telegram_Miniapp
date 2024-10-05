@@ -5460,7 +5460,6 @@ self.C3_ExpressionFuncs = [
 		() => "Loading",
 		() => 0.01,
 		() => "SCORE",
-		() => "http://localhost:3000/api/v1/user",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
