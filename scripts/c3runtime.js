@@ -5442,7 +5442,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(2, 6);
 		},
 		() => "Content-Type",
-		() => "application/x-www-form-urlencoded",
+		() => "application/json",
 		() => "InitUser",
 		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
 		p => {
