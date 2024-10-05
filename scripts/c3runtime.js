@@ -5333,7 +5333,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "score",
 		() => "updateData",
-		() => "http://localhost:3000/api/v1/update",
+		() => "https://hamie-game-back-end-telegram.vercel.app\n/api/v1/update",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => ("data=" + n0.ExpObject());
