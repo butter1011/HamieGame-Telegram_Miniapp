@@ -68,7 +68,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Particles.Acts.SetInitSize,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.SetOpacity,
-		C3.Plugins.AJAX.Acts.SetHeader,
 		C3.Plugins.LocalStorage.Acts.CheckItemExists,
 		C3.ScriptsInEvents.EventMenu_Event3_Act4,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
