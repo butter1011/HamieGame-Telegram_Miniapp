@@ -72,13 +72,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Acts.CheckItemExists,
 		C3.ScriptsInEvents.EventMenu_Event3_Act4,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.LocalStorage.Cnds.OnItemExists,
-		C3.Plugins.LocalStorage.Acts.GetItem,
-		C3.Plugins.LocalStorage.Cnds.OnItemGet,
-		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.LocalStorage.Cnds.OnItemMissing,
-		C3.Plugins.System.Cnds.Compare,
-		C3.Plugins.LocalStorage.Acts.SetItem,
+		C3.ScriptsInEvents.EventScore_Event2_Act2,
+		C3.Plugins.AJAX.Cnds.OnComplete,
+		C3.Plugins.Json.Acts.Parse,
+		C3.Plugins.AJAX.Exps.LastData,
+		C3.Plugins.Json.Exps.Get,
 		C3.Plugins.Text.Exps.X,
 		C3.Plugins.Text.Exps.Y
 	];
