@@ -5326,6 +5326,19 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => "telegramId",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
+		() => "score",
+		() => "updateData",
+		() => "http://localhost:3000/api/v1/update",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => ("data=" + n0.ExpObject());
+		},
+		() => "POST",
 		() => "Gameplay",
 		() => 180,
 		() => 20,
@@ -5401,10 +5414,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 5,
 		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
-		},
-		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(13, 15);
 		},
@@ -5441,17 +5450,13 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(2, 6);
 		},
-		() => "telegramId",
-		() => "userName",
 		() => "firstName",
+		() => "userName",
 		() => "lastName",
+		() => "Content-type",
+		() => "application/json",
 		() => "InitUser",
 		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
-		p => {
-			const n0 = p._GetNode(0);
-			return () => ("data=" + n0.ExpObject());
-		},
-		() => "POST",
 		() => "Menu",
 		() => "score_flappyufo",
 		() => "Loading",
