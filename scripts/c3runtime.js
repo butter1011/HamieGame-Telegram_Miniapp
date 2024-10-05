@@ -5442,7 +5442,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(2, 6);
 		},
 		() => "Content-Type",
-		() => "application/json",
+		() => "www-form-urlencoded",
 		() => "InitUser",
 		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
 		p => {
@@ -5450,7 +5450,7 @@ self.C3_ExpressionFuncs = [
 			const v1 = p._GetNode(1).GetVar();
 			const v2 = p._GetNode(2).GetVar();
 			const v3 = p._GetNode(3).GetVar();
-			return () => (((((((((((((and((("{" + "telegramId") + ":"), v0.GetValue()) + ",") + "firstName") + ":") + v1.GetValue()) + ",") + "lastName") + ":") + v2.GetValue()) + ",") + "userName") + ":") + v3.GetValue()) + "}");
+			return () => ((((((and("telegramId=", v0.GetValue()) + "firstName=") + v1.GetValue()) + "userName=") + v2.GetValue()) + "lastName=") + v3.GetValue());
 		},
 		() => "POST",
 		() => "Menu",
