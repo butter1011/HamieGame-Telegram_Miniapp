@@ -5447,10 +5447,6 @@ self.C3_ExpressionFuncs = [
 		() => "lastName",
 		() => "InitUser",
 		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
-		p => {
-			const n0 = p._GetNode(0);
-			return () => ("data=" + n0.ExpObject());
-		},
 		() => "POST",
 		() => "Menu",
 		() => "score_flappyufo",
