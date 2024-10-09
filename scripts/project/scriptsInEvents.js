@@ -53,6 +53,24 @@ const scriptsInEvents = {
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
 		}
+	},
+
+	async Event_leaderboard_Event3_Act1(runtime, localVars)
+	{
+		if (window.Telegram.WebApp) {
+			Telegram.WebApp.ready();
+			window.Telegram.WebApp.enableClosingConfirmation();
+			// Get the Telegram UserInfo
+			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
+		
+			// Init the global variables
+			runtime.globalVars.telegramId = telegramId;
+		}
+	},
+
+	async Event_leaderboard_Event8_Act1(runtime, localVars)
+	{
+		runtime.callFunction("InitScreen");
 	}
 
 };
