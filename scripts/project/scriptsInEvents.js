@@ -55,7 +55,7 @@ const scriptsInEvents = {
 		}
 	},
 
-	async Event_leaderboard_Event3_Act1(runtime, localVars)
+	async Event_leaderboard_Event3_Act4(runtime, localVars)
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
