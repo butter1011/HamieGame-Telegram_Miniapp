@@ -5609,7 +5609,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("bestScoreRank.bestScore");
+			return () => n0.ExpObject("bestScoreRank");
 		},
 		() => "userlist",
 		p => {
@@ -5635,6 +5635,15 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1000);
 		},
+		() => 300,
+		p => {
+			const n0 = p._GetNode(0);
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const n2 = p._GetNode(2);
+			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1090);
+		},
+		() => 45,
+		() => 80,
 		() => 810,
 		p => {
 			const n0 = p._GetNode(0);
@@ -5642,7 +5651,7 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1085);
 		},
-		() => 450,
+		() => 400,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -5658,12 +5667,6 @@ self.C3_ExpressionFuncs = [
 		() => 150,
 		() => 850,
 		() => 160,
-		p => {
-			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			const n2 = p._GetNode(2);
-			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1090);
-		},
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 55);
