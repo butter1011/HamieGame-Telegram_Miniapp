@@ -5570,7 +5570,8 @@ self.C3_ExpressionFuncs = [
 			return () => ((1606 - (v0.GetValue() * ((n1.ExpObject() + 20) / 2))) + 300);
 		},
 		() => "Close Button",
-		() => 0.7
+		() => 0.7,
+		() => "GO"
 ];
 
 
