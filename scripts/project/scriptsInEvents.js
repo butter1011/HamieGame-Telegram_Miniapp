@@ -21,7 +21,7 @@ const scriptsInEvents = {
 		runtime.callFunction("updateData");
 	},
 
-	async EventMenu_Event3_Act4(runtime, localVars)
+	async EventMenu_Event3_Act3(runtime, localVars)
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
@@ -42,7 +42,7 @@ const scriptsInEvents = {
 		}
 	},
 
-	async EventScore_Event2_Act2(runtime, localVars)
+	async EventScore_Event2_Act1(runtime, localVars)
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
