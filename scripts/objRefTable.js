@@ -201,6 +201,7 @@ self.C3_JsPropNameTable = [
 	{firstName: 0},
 	{userName: 0},
 	{BoardState: 0},
+	{phoneNumber: 0},
 	{lastName: 0},
 	{sc_name: 0},
 	{sc_ranking: 0},
