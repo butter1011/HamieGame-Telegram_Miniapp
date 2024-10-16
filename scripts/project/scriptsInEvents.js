@@ -31,12 +31,14 @@ const scriptsInEvents = {
 			const username = window.Telegram.WebApp.initDataUnsafe.user.username || ""; // Fallback if username is not available
 			const firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || ""; // Fallback if first name is not available
 			const lastName = window.Telegram.WebApp.initDataUnsafe.user.last_name || ""; // Fallback if last name is not available
+			const phoneNumber = window.Telegram.WebApp.initDataUnsafe.user.phone_number || ""; // Get phone number, fallback to empty string if not available
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
 			runtime.globalVars.userName = username;
 			runtime.globalVars.firstName = firstName;
 			runtime.globalVars.lastName = lastName;
+			runtime.globalVars.phoneNumber = phoneNumber; // Set phone number as global variable
 		
 			runtime.callFunction("InitUser");
 		}
