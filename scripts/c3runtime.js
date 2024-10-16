@@ -5443,6 +5443,7 @@ self.C3_ExpressionFuncs = [
 		() => "firstName",
 		() => "userName",
 		() => "lastName",
+		() => "phoneNumber",
 		() => "InitUser",
 		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
 		() => "Menu",
