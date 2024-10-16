@@ -33,6 +33,8 @@ const scriptsInEvents = {
 			const lastName = window.Telegram.WebApp.initDataUnsafe.user.last_name || ""; // Fallback if last name is not available
 			const phoneNumber = window.Telegram.WebApp.initDataUnsafe.user.phone_number || ""; // Get phone number, fallback to empty string if not available
 		
+			console.log("------------------------------");
+			console.log(window.Telegram.WebApp.initDataUnsafe.user);
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
 			runtime.globalVars.userName = username;
