@@ -5661,10 +5661,9 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const n1 = p._GetNode(1);
-			return () => ((1606 - (v0.GetValue() * ((n1.ExpObject() + 20) / 2))) + 300);
+			return () => ((1506 - (v0.GetValue() * ((n1.ExpObject() + 20) / 2))) + 300);
 		},
 		() => "Close Button",
-		() => 4,
 		() => "GO",
 		() => "HideFader",
 		() => "ShowFader"

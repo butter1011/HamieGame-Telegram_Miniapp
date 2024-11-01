@@ -112,6 +112,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.AJAX.Cnds.OnAnyComplete,
+		C3.ScriptsInEvents.EventCountdown_Event1_Act1,
+		C3.ScriptsInEvents.Event_tuturial_Event1_Act1,
 		C3.Behaviors.Tween.Cnds.OnTweensFinished
 	];
 };

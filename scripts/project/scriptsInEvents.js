@@ -7,6 +7,7 @@ const scriptsInEvents = {
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
+			window.Telegram.WebApp.expand();
 			window.Telegram.WebApp.enableClosingConfirmation();
 			// Get the Telegram UserInfo
 			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
@@ -25,6 +26,7 @@ const scriptsInEvents = {
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
+			window.Telegram.WebApp.expand();
 		
 			// Get the Telegram UserInfo
 			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
@@ -46,6 +48,8 @@ const scriptsInEvents = {
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
+			window.Telegram.WebApp.expand();
+			
 			window.Telegram.WebApp.enableClosingConfirmation();
 			// Get the Telegram UserInfo
 			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
@@ -59,6 +63,7 @@ const scriptsInEvents = {
 	{
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
+			window.Telegram.WebApp.expand();
 			window.Telegram.WebApp.enableClosingConfirmation();
 			// Get the Telegram UserInfo
 			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
@@ -71,6 +76,24 @@ const scriptsInEvents = {
 	async Event_leaderboard_Event8_Act1(runtime, localVars)
 	{
 		runtime.callFunction("InitScreen");
+	},
+
+	async EventCountdown_Event1_Act1(runtime, localVars)
+	{
+		if (window.Telegram.WebApp) {
+			Telegram.WebApp.ready();
+			window.Telegram.WebApp.expand();
+		}
+		
+	},
+
+	async Event_tuturial_Event1_Act1(runtime, localVars)
+	{
+		if (window.Telegram.WebApp) {
+			Telegram.WebApp.ready();
+			window.Telegram.WebApp.expand();
+		}
+		
 	}
 
 };
