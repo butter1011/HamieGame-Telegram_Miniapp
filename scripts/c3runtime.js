@@ -5569,7 +5569,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "gamePlayAudio",
 		() => 2.4,
-		() => 570,
+		() => 690,
 		() => 1500,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -5610,14 +5610,14 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 1);
 		},
-		() => 545,
+		() => 586,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1000);
 		},
-		() => 300,
+		() => 341,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -5625,14 +5625,14 @@ self.C3_ExpressionFuncs = [
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1090);
 		},
 		() => 45,
-		() => 810,
+		() => 851,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 1085);
 		},
-		() => 400,
+		() => 441,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -5646,10 +5646,10 @@ self.C3_ExpressionFuncs = [
 			const f2 = p._GetNode(2).GetBoundMethod();
 			return () => f0(v1.GetValue(), f2(), ",");
 		},
-		() => 150,
+		() => 191,
 		() => "Architype-Ballmer",
-		() => 850,
-		() => 160,
+		() => 891,
+		() => 201,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 55);
