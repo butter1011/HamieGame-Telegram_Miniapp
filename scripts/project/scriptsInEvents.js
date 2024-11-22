@@ -17,7 +17,7 @@ const scriptsInEvents = {
 		}
 	},
 
-	async EventGameplay_Event10_Act1(runtime, localVars)
+	async EventGameplay_Event22_Act1(runtime, localVars)
 	{
 		runtime.callFunction("updateData");
 	},
@@ -76,15 +76,6 @@ const scriptsInEvents = {
 	async Event_leaderboard_Event8_Act1(runtime, localVars)
 	{
 		runtime.callFunction("InitScreen");
-	},
-
-	async EventCountdown_Event1_Act1(runtime, localVars)
-	{
-		if (window.Telegram.WebApp) {
-			Telegram.WebApp.ready();
-			window.Telegram.WebApp.expand();
-		}
-		
 	},
 
 	async Event_tuturial_Event1_Act1(runtime, localVars)
