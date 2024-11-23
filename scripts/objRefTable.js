@@ -218,6 +218,8 @@ self.C3_JsPropNameTable = [
 	{TextTutorial: 0},
 	{UserMedia: 0},
 	{Button: 0},
+	{Sprite: 0},
+	{Sprite2: 0},
 	{var_state: 0},
 	{music_controller1: 0},
 	{game_start: 0},
@@ -342,5 +344,7 @@ self.InstanceType = {
 	Mouse: class extends self.IInstance {},
 	TextTutorial: class extends self.ITextInstance {},
 	UserMedia: class extends self.IWorldInstance {},
-	Button: class extends self.IButtonInstance {}
+	Button: class extends self.IButtonInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {}
 }
