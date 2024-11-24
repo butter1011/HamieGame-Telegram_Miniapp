@@ -32,6 +32,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetVar,
 		C3.Behaviors.Platform.Acts.SetGravity,
 		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Acts.SetCanvasSize,
+		C3.Plugins.System.Acts.SetLayoutScale,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.MoveToTop,
@@ -249,7 +251,9 @@ self.C3_JsPropNameTable = [
 	{yourScore: 0},
 	{yourName: 0},
 	{a1: 0},
-	{Iterator: 0}
+	{Iterator: 0},
+	{width: 0},
+	{height: 0}
 ];
 
 self.InstanceType = {

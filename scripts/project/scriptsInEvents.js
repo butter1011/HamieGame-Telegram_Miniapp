@@ -14,6 +14,8 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
+			runtime.globalVars.width = window.innerWidth;
+			runtime.globalVars.height = window.innerHeight;
 		}
 	},
 
@@ -39,9 +41,12 @@ const scriptsInEvents = {
 			runtime.globalVars.userName = username;
 			runtime.globalVars.firstName = firstName;
 			runtime.globalVars.lastName = lastName;
-		
+			
 			runtime.callFunction("InitUser");
+			runtime.globalVars.width = window.innerWidth;
+			runtime.globalVars.height = window.innerHeight;
 		}
+		
 	},
 
 	async EventScore_Event2_Act1(runtime, localVars)
@@ -56,7 +61,10 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
+			runtime.globalVars.width = window.innerWidth;
+			runtime.globalVars.height = window.innerHeight;
 		}
+		
 	},
 
 	async Event_leaderboard_Event3_Act4(runtime, localVars)
@@ -70,6 +78,8 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
+			runtime.globalVars.width = window.innerWidth;
+			runtime.globalVars.height = window.innerHeight;
 		}
 	},
 
@@ -83,8 +93,9 @@ const scriptsInEvents = {
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
 			window.Telegram.WebApp.expand();
+			runtime.globalVars.width = window.innerWidth;
+			runtime.globalVars.height = window.innerHeight;
 		}
-		
 	}
 
 };
