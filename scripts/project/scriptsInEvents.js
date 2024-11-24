@@ -14,9 +14,10 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
-			runtime.globalVars.width = window.innerWidth;
-			runtime.globalVars.height = window.innerHeight;
 		}
+		
+		runtime.globalVars.width = window.innerWidth;
+		runtime.globalVars.height = window.innerHeight;
 	},
 
 	async EventGameplay_Event22_Act1(runtime, localVars)
@@ -43,9 +44,10 @@ const scriptsInEvents = {
 			runtime.globalVars.lastName = lastName;
 			
 			runtime.callFunction("InitUser");
-			runtime.globalVars.width = window.innerWidth;
-			runtime.globalVars.height = window.innerHeight;
 		}
+		
+		runtime.globalVars.width = window.innerWidth;
+		runtime.globalVars.height = window.innerHeight;
 		
 	},
 
@@ -61,9 +63,10 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
-			runtime.globalVars.width = window.innerWidth;
-			runtime.globalVars.height = window.innerHeight;
 		}
+		
+		runtime.globalVars.width = window.innerWidth;
+		runtime.globalVars.height = window.innerHeight;
 		
 	},
 
@@ -78,9 +81,10 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
-			runtime.globalVars.width = window.innerWidth;
-			runtime.globalVars.height = window.innerHeight;
 		}
+		
+		runtime.globalVars.width = window.innerWidth;
+		runtime.globalVars.height = window.innerHeight;
 	},
 
 	async Event_leaderboard_Event8_Act1(runtime, localVars)
@@ -93,9 +97,10 @@ const scriptsInEvents = {
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
 			window.Telegram.WebApp.expand();
-			runtime.globalVars.width = window.innerWidth;
-			runtime.globalVars.height = window.innerHeight;
 		}
+		
+		runtime.globalVars.width = window.innerWidth;
+		runtime.globalVars.height = window.innerHeight;
 	}
 
 };
