@@ -5,16 +5,15 @@ const scriptsInEvents = {
 
 	async EventGameplay_Event3_Act3(runtime, localVars)
 	{
-		if (window.Telegram && window.Telegram.WebApp) {
-			window.Telegram.WebApp.ready();
+		if (window.Telegram.WebApp) {
+			Telegram.WebApp.ready();
 			window.Telegram.WebApp.expand();
 			window.Telegram.WebApp.enableClosingConfirmation();
 			// Get the Telegram UserInfo
-			const telegramId = window.Telegram.WebApp.initDataUnsafe?.user?.id;
+			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
+		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
-		    runtime.globalVars.width = window.Telegram.WebApp.viewportStableWidth;
-		    runtime.globalVars.height = window.Telegram.WebApp.viewportStableHeight;
 		}
 	},
 
@@ -28,7 +27,7 @@ const scriptsInEvents = {
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
 			window.Telegram.WebApp.expand();
-			window.Telegram.WebApp.enableClosingConfirmation();
+		
 			// Get the Telegram UserInfo
 			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
 			const username = window.Telegram.WebApp.initDataUnsafe.user.username || ""; // Fallback if username is not available
@@ -40,12 +39,9 @@ const scriptsInEvents = {
 			runtime.globalVars.userName = username;
 			runtime.globalVars.firstName = firstName;
 			runtime.globalVars.lastName = lastName;
-			
-			runtime.callFunction("InitUser");
-			runtime.globalVars.width = window.Telegram.WebApp.viewportStableWidth;
-		    runtime.globalVars.height = window.Telegram.WebApp.viewportStableHeight;
-		}
 		
+			runtime.callFunction("InitUser");
+		}
 	},
 
 	async EventScore_Event2_Act1(runtime, localVars)
@@ -53,14 +49,16 @@ const scriptsInEvents = {
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
 			window.Telegram.WebApp.expand();
+			
 			window.Telegram.WebApp.enableClosingConfirmation();
 			// Get the Telegram UserInfo
 			const telegramId = window.Telegram.WebApp.initDataUnsafe.user.id;
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
-			runtime.globalVars.width = window.Telegram.WebApp.viewportStableWidth;
-		    runtime.globalVars.height = window.Telegram.WebApp.viewportStableHeight;
+			
+		
+			
 		}
 	},
 
@@ -75,8 +73,6 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
-			runtime.globalVars.width = window.Telegram.WebApp.viewportStableWidth;
-		    runtime.globalVars.height = window.Telegram.WebApp.viewportStableHeight;
 		}
 	},
 
@@ -90,9 +86,6 @@ const scriptsInEvents = {
 		if (window.Telegram.WebApp) {
 			Telegram.WebApp.ready();
 			window.Telegram.WebApp.expand();
-			window.Telegram.WebApp.enableClosingConfirmation();
-			runtime.globalVars.width = window.Telegram.WebApp.viewportStableWidth;
-		    runtime.globalVars.height = window.Telegram.WebApp.viewportStableHeight;
 		}
 		
 	}

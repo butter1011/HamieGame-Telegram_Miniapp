@@ -9,7 +9,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform,
 		C3.Plugins.Spritefont2,
 		C3.Plugins.Text,
+		C3.Behaviors.Anchor,
 		C3.Behaviors.Tween,
+		C3.Behaviors.Flash,
 		C3.Plugins.TiledBg,
 		C3.Plugins.Arr,
 		C3.Behaviors.DragnDrop,
@@ -32,10 +34,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetVar,
 		C3.Behaviors.Platform.Acts.SetGravity,
 		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.System.Acts.SetCanvasSize,
-		C3.Plugins.System.Acts.SetLayoutScale,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.MoveToTop,
 		C3.Plugins.Sprite.Acts.MoveAtAngle,
 		C3.Plugins.Sprite.Acts.SetX,
@@ -134,6 +133,7 @@ self.C3_JsPropNameTable = [
 	{Levelscore: 0},
 	{countText: 0},
 	{stars: 0},
+	{Anchor: 0},
 	{background_bottom1: 0},
 	{background_bottom2: 0},
 	{background_left: 0},
@@ -142,6 +142,7 @@ self.C3_JsPropNameTable = [
 	{background_top2: 0},
 	{bottom_1: 0},
 	{Tween: 0},
+	{Flash: 0},
 	{bottom_2: 0},
 	{bottom_3: 0},
 	{bottom_4: 0},
@@ -234,6 +235,7 @@ self.C3_JsPropNameTable = [
 	{LevelCount: 0},
 	{coinLocationX: 0},
 	{coinLocationY: 0},
+	{gamespeedcontroller: 0},
 	{start_countdown: 0},
 	{telegramId: 0},
 	{firstName: 0},
@@ -251,9 +253,7 @@ self.C3_JsPropNameTable = [
 	{yourScore: 0},
 	{yourName: 0},
 	{a1: 0},
-	{Iterator: 0},
-	{width: 0},
-	{height: 0}
+	{Iterator: 0}
 ];
 
 self.InstanceType = {
