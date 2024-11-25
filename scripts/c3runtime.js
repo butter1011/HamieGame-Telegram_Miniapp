@@ -1635,8 +1635,8 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(1, 1.7);
 		},
-		() => -10,
 		() => 10,
+		() => -10,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (-n0.ExpObject());
@@ -1686,10 +1686,8 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 1);
 		},
-		() => "Architype-Ballmer",
 		() => "background",
 		() => "GO",
-		() => "proto-sans",
 		() => 40,
 		() => 2700,
 		() => 1300,
@@ -1810,7 +1808,7 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() + (f1() * (n2.ExpObject() + 20)));
 		},
 		() => 341,
-		() => 750,
+		() => 700,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -1824,6 +1822,7 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 20);
 		},
+		() => "ethnocentric rg it",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
@@ -1831,18 +1830,12 @@ self.C3_ExpressionFuncs = [
 			return () => f0(v1.GetValue(), f2(), ",");
 		},
 		() => 248,
+		() => 750,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
-			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) + 15);
-		},
-		() => 800,
-		p => {
-			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			const n2 = p._GetNode(2);
-			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 25);
+			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 10);
 		},
 		p => {
 			const n0 = p._GetNode(0);
