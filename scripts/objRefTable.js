@@ -77,6 +77,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SetMaxFallSpeed,
 		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.System.Exps.rgbex,
+		C3.Plugins.Sprite.Exps.ColorValue,
 		C3.Plugins.LocalStorage.Acts.CheckItemExists,
 		C3.ScriptsInEvents.EventMenu_Event3_Act3,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
