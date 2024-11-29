@@ -1545,7 +1545,33 @@ self.C3_ExpressionFuncs = [
 		() => "Gameplay",
 		() => 0,
 		() => 3,
+		() => "3",
+		() => "2",
+		() => "1",
+		() => "GO",
+		() => "background",
+		() => 100,
+		() => "",
 		() => 1,
+		() => 200,
+		() => 40,
+		() => 2700,
+		() => 1300,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(4, 6);
+		},
+		() => "Objects",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			return () => ((v0.GetValue() + f1(300, 500)) + 1200);
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			return () => (v0.GetValue() + f1(600, 800));
+		},
 		() => 180,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -1573,7 +1599,6 @@ self.C3_ExpressionFuncs = [
 			const f1 = p._GetNode(1).GetBoundMethod();
 			return () => f0(f1());
 		},
-		() => "",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(1, 4);
@@ -1598,7 +1623,6 @@ self.C3_ExpressionFuncs = [
 		() => 0.4,
 		() => -7,
 		() => 2.5,
-		() => 100,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() % 10);
@@ -1606,17 +1630,6 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(13, 15);
-		},
-		() => "Objects",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => (v0.GetValue() + f1(300, 500));
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => (v0.GetValue() + f1(600, 800));
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1629,7 +1642,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => (v0.GetValue() + f1(200, 500));
+			return () => ((v0.GetValue() + f1(200, 500)) + 1200);
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1648,10 +1661,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 1.5,
 		() => "0",
-		() => "1",
 		() => 2,
-		() => "2",
-		() => "3",
 		() => 4,
 		() => "4",
 		p => {
@@ -1681,19 +1691,6 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (1.5 - (Math.abs(Math.sin(C3.toRadians((v0.GetValue() * 5)))) * 0.5));
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() - 1);
-		},
-		() => "background",
-		() => "GO",
-		() => 40,
-		() => 2700,
-		() => 1300,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(4, 6);
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
