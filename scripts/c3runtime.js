@@ -1648,7 +1648,6 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(1, 1.7);
 		},
-		() => 10,
 		() => -10,
 		p => {
 			const n0 = p._GetNode(0);
@@ -1692,6 +1691,9 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (1.5 - (Math.abs(Math.sin(C3.toRadians((v0.GetValue() * 5)))) * 0.5));
 		},
+		() => 10,
+		() => 610,
+		() => 585,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(2.5);
