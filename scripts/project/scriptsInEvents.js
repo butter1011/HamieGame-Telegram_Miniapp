@@ -73,6 +73,7 @@ const scriptsInEvents = {
 		
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
+		
 		}
 	},
 

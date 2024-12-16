@@ -1699,6 +1699,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(2.5);
 		},
 		() => -717750023016447,
+		() => -619068854423551,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(2);
@@ -1765,6 +1766,7 @@ self.C3_ExpressionFuncs = [
 		() => 574,
 		() => 910,
 		() => 550,
+		() => 620,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const n1 = p._GetNode(1);
@@ -1801,12 +1803,15 @@ self.C3_ExpressionFuncs = [
 			return () => and(",", n0.ExpObject((and("userlist.", v1.GetValue()) + ".bestScore")));
 		},
 		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() - 1);
+		},
+		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
 			return () => (n0.ExpObject() + (f1() * (n2.ExpObject() + 20)));
 		},
-		() => 341,
 		() => 700,
 		p => {
 			const n0 = p._GetNode(0);
@@ -1814,7 +1819,7 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) + 20);
 		},
-		() => 380,
+		() => 330,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -1843,19 +1848,45 @@ self.C3_ExpressionFuncs = [
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 40);
 		},
 		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 55);
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + 0.04);
 		},
 		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() + 55);
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() - 0.04);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const n1 = p._GetNode(1);
-			return () => (550 - ((v0.GetValue() - 4) * (n1.ExpObject() + 20)));
+			return () => (620 - ((v0.GetValue() - 4) * (n1.ExpObject() + 20)));
 		},
 		() => "Close Button",
+		() => 175,
+		() => 1005,
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			const n2 = p._GetNode(2);
+			return () => ((620 - n0.ExpObject()) / ((v1.GetValue() - 4) * (n2.ExpObject() + 20)));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => ((n0.ExpObject() - 175) / 830);
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => ((f0() - 175) / 830);
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			const n2 = p._GetNode(2);
+			return () => (620 - (v0.GetValue() * ((v1.GetValue() - 4) * (n2.ExpObject() + 20))));
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (175 + (v0.GetValue() * 830));
+		},
 		() => "HideFader",
 		() => "ShowFader"
 ];

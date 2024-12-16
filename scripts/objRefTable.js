@@ -111,9 +111,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.tokenat,
 		C3.Plugins.Text.Acts.Destroy,
 		C3.Plugins.Mouse.Cnds.OnWheel,
-		C3.Plugins.Sprite.Acts.SetY,
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
+		C3.Plugins.Sprite.Acts.SetY,
 		C3.Plugins.System.Cnds.CompareBoolVar,
+		C3.Behaviors.DragnDrop.Cnds.IsDragging,
+		C3.Plugins.Touch.Exps.X,
 		C3.ScriptsInEvents.Event_tuturial_Event1_Act1,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Behaviors.Tween.Cnds.OnTweensFinished
@@ -232,6 +234,9 @@ self.C3_JsPropNameTable = [
 	{Button: 0},
 	{Sprite: 0},
 	{Sprite2: 0},
+	{Sprite3: 0},
+	{scrollBoard: 0},
+	{scrollBar: 0},
 	{var_state: 0},
 	{music_controller1: 0},
 	{game_start: 0},
@@ -262,6 +267,7 @@ self.C3_JsPropNameTable = [
 	{yourScore: 0},
 	{yourName: 0},
 	{a1: 0},
+	{scrollBar_percent: 0},
 	{Iterator: 0}
 ];
 
@@ -364,5 +370,8 @@ self.InstanceType = {
 	UserMedia: class extends self.IWorldInstance {},
 	Button: class extends self.IButtonInstance {},
 	Sprite: class extends self.ISpriteInstance {},
-	Sprite2: class extends self.ISpriteInstance {}
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	scrollBoard: class extends self.ISpriteInstance {},
+	scrollBar: class extends self.ISpriteInstance {}
 }
