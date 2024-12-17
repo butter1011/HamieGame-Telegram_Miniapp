@@ -101,6 +101,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.tokencount,
 		C3.Plugins.System.Acts.ResetEventVar,
 		C3.ScriptsInEvents.Event_leaderboard_Event3_Act4,
+		C3.ScriptsInEvents.Event_leaderboard_Event5_Act2,
+		C3.ScriptsInEvents.Event_leaderboard_Event6_Act3,
 		C3.Plugins.Json.Cnds.ForEach,
 		C3.ScriptsInEvents.Event_leaderboard_Event8_Act1,
 		C3.Plugins.System.Cnds.For,

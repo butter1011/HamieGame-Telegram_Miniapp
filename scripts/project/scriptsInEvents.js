@@ -77,6 +77,17 @@ const scriptsInEvents = {
 		}
 	},
 
+	async Event_leaderboard_Event5_Act2(runtime, localVars)
+	{
+		console.log(JSON);
+	},
+
+	async Event_leaderboard_Event6_Act3(runtime, localVars)
+	{
+		
+		
+	},
+
 	async Event_leaderboard_Event8_Act1(runtime, localVars)
 	{
 		runtime.callFunction("InitScreen");
