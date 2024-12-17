@@ -1536,7 +1536,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "score",
 		() => "updateData",
-		() => "http://localhost:3000\n/api/v1/update",
+		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/update",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => ("data=" + n0.ExpObject());
@@ -1746,7 +1746,7 @@ self.C3_ExpressionFuncs = [
 		() => "userName",
 		() => "lastName",
 		() => "InitUser",
-		() => "http://localhost:3000/api/v1/user",
+		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
 		() => "Menu",
 		() => "score_flappyufo",
 		() => -537419109535743,
@@ -1790,7 +1790,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(v1.GetValue(), ",");
 		},
 		() => "GetUserList",
-		() => "http://localhost:3000/api/v2/userlist",
+		() => "https://hamie-game-back-end-telegram.vercel.app/api/v2/userlist",
 		() => "Generate Cards",
 		p => {
 			const n0 = p._GetNode(0);
