@@ -1639,7 +1639,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(13, 15);
+			return () => f0(20, 21);
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1647,7 +1647,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(7, 9);
+			return () => f0(8, 9);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -1822,7 +1822,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
-			return () => and(",", n0.ExpObject((and("userlist.", v1.GetValue()) + ".bestScore")));
+			return () => and(",", n0.ExpObject((and("userlist.", v1.GetValue()) + ".weeklyBestScore")));
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
