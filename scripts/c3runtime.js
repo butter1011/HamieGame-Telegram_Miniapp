@@ -1566,7 +1566,7 @@ self.C3_ExpressionFuncs = [
 		() => 200,
 		() => 40,
 		() => 2700,
-		() => 1300,
+		() => 1000,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(4, 6);
@@ -1620,15 +1620,7 @@ self.C3_ExpressionFuncs = [
 		() => -400,
 		() => 5,
 		() => -950,
-		() => 340,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpObject();
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 10);
-		},
+		() => 8,
 		() => -5,
 		() => 0.4,
 		() => -7,
@@ -1688,6 +1680,10 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(200, 300);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject();
 		},
 		p => {
 			const n0 = p._GetNode(0);
@@ -1855,19 +1851,13 @@ self.C3_ExpressionFuncs = [
 			const f2 = p._GetNode(2).GetBoundMethod();
 			return () => f0(v1.GetValue(), f2(), ",");
 		},
-		() => 248,
+		() => 268,
 		() => 750,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
 			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 10);
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			const f1 = p._GetNode(1).GetBoundMethod();
-			const n2 = p._GetNode(2);
-			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 40);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
