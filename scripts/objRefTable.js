@@ -240,9 +240,6 @@ self.C3_JsPropNameTable = [
 	{Rotate: 0},
 	{Sprite4: 0},
 	{HTMLElement: 0},
-	{FireSparkParticles: 0},
-	{FireParticles: 0},
-	{AllParticles: 0},
 	{var_state: 0},
 	{music_controller1: 0},
 	{game_start: 0},
@@ -384,8 +381,5 @@ self.InstanceType = {
 	scrollBar: class extends self.ISpriteInstance {},
 	SpriteFont: class extends self.ISpriteFontInstance {},
 	Sprite4: class extends self.ISpriteInstance {},
-	HTMLElement: class extends self.IHTMLElementInstance {},
-	FireSparkParticles: class extends self.IParticlesInstance {},
-	FireParticles: class extends self.IParticlesInstance {},
-	AllParticles: class extends self.IParticlesInstance {}
+	HTMLElement: class extends self.IHTMLElementInstance {}
 }
