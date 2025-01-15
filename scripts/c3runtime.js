@@ -1796,16 +1796,19 @@ self.C3_ExpressionFuncs = [
 			return () => f0(v1.GetValue(), ",");
 		},
 		() => "GetUserList",
-		() => "https://hamie-game-back-end-telegram.vercel.app/api/v2/userlist",
+		() => "https://hamie-game-back-end-telegram.vercel.app/api/v2/total",
 		() => "Generate Cards",
 		p => {
 			const n0 = p._GetNode(0);
-			return () => n0.ExpObject("bestItem.bestScore");
+			const v1 = p._GetNode(1).GetVar();
+			return () => n0.ExpObject((and("userlist.", v1.GetValue()) + ".bestScore"));
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			return () => and(and(n0.ExpObject("bestItem.firstName"), " "), n1.ExpObject("bestItem.lastName"));
+			const v1 = p._GetNode(1).GetVar();
+			const n2 = p._GetNode(2);
+			const v3 = p._GetNode(3).GetVar();
+			return () => and(and(n0.ExpObject((and("userlist.", v1.GetValue()) + ".firstName")), " "), n2.ExpObject((and("userlist.", v3.GetValue()) + ".lastName")));
 		},
 		() => "userlist",
 		p => {
@@ -1818,7 +1821,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
-			return () => and(",", n0.ExpObject((and("userlist.", v1.GetValue()) + ".weeklyBestScore")));
+			return () => and(",", n0.ExpObject((and("userlist.", v1.GetValue()) + ".bestScore")));
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();

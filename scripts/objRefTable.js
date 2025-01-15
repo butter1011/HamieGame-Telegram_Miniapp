@@ -273,6 +273,7 @@ self.C3_JsPropNameTable = [
 	{scrollBar_percent: 0},
 	{topBestScore: 0},
 	{loading: 0},
+	{topNumber: 0},
 	{Iterator: 0}
 ];
 

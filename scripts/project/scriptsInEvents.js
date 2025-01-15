@@ -15,6 +15,7 @@ const scriptsInEvents = {
 			// Init the global variables
 			runtime.globalVars.telegramId = telegramId;
 		}
+		
 	},
 
 	async EventGameplay_Event22_Act1(runtime, localVars)
@@ -42,6 +43,7 @@ const scriptsInEvents = {
 		
 			runtime.callFunction("InitUser");
 		}
+		
 	},
 
 	async EventScore_Event2_Act1(runtime, localVars)
@@ -60,6 +62,7 @@ const scriptsInEvents = {
 		
 			
 		}
+		
 	},
 
 	async Event_leaderboard_Event3_Act5(runtime, localVars)
@@ -75,6 +78,8 @@ const scriptsInEvents = {
 			runtime.globalVars.telegramId = telegramId;
 		
 		}
+		
+		
 	},
 
 	async Event_leaderboard_Event5_Act2(runtime, localVars)
@@ -89,10 +94,10 @@ const scriptsInEvents = {
 
 	async Event_tuturial_Event1_Act1(runtime, localVars)
 	{
-		if (window.Telegram.WebApp) {
-			Telegram.WebApp.ready();
-			window.Telegram.WebApp.expand();
-		}
+		// if (window.Telegram.WebApp) {
+		// 	Telegram.WebApp.ready();
+		// 	window.Telegram.WebApp.expand();
+		// }
 		
 	}
 
