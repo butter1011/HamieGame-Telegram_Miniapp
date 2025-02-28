@@ -1546,7 +1546,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "score",
 		() => "updateData",
-		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/update",
+		() => "https://hamie-background-84e4d370e5e9.herokuapp.com/api/v1/update",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => ("data=" + n0.ExpObject());
@@ -1752,12 +1752,13 @@ self.C3_ExpressionFuncs = [
 		() => "userName",
 		() => "lastName",
 		() => "InitUser",
-		() => "https://hamie-game-back-end-telegram.vercel.app/api/v1/user",
+		() => "https://hamie-background-84e4d370e5e9.herokuapp.com/api/v1/user",
 		() => "Menu",
 		() => "score_flappyufo",
 		() => -537419109535743,
 		() => 0.15,
 		() => 0.1,
+		() => 50,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -1796,7 +1797,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(v1.GetValue(), ",");
 		},
 		() => "GetUserList",
-		() => "https://hamie-game-back-end-telegram.vercel.app/api/v2/weeklyforleardboard",
+		() => "https://hamie-background-84e4d370e5e9.herokuapp.com/api/v2/weeklyforleardboard",
 		() => "Generate Cards",
 		p => {
 			const n0 = p._GetNode(0);
@@ -1821,6 +1822,16 @@ self.C3_ExpressionFuncs = [
 			return () => and(",", n0.ExpObject((and("userlist.", v1.GetValue()) + ".weeklyBestScore")));
 		},
 		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => and(",", n0.ExpObject((and((and("userlist.", v1.GetValue()) + ".weeklyBestScores."), 1) + "")));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => and(",", n0.ExpObject((and((and("userlist.", v1.GetValue()) + ".weeklyBestScores."), 2) + "")));
+		},
+		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 1);
 		},
@@ -1830,12 +1841,12 @@ self.C3_ExpressionFuncs = [
 			const n2 = p._GetNode(2);
 			return () => (n0.ExpObject() + (f1() * (n2.ExpObject() + 20)));
 		},
-		() => 700,
+		() => 800,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
-			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) + 20);
+			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 70);
 		},
 		() => 330,
 		p => {
@@ -1852,12 +1863,25 @@ self.C3_ExpressionFuncs = [
 			return () => f0(v1.GetValue(), f2(), ",");
 		},
 		() => 268,
+		p => {
+			const n0 = p._GetNode(0);
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const n2 = p._GetNode(2);
+			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) + 20);
+		},
 		() => 750,
 		p => {
 			const n0 = p._GetNode(0);
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const n2 = p._GetNode(2);
-			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) - 10);
+			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) + 5);
+		},
+		() => 850,
+		p => {
+			const n0 = p._GetNode(0);
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const n2 = p._GetNode(2);
+			return () => ((n0.ExpObject() + (f1() * (n2.ExpObject() + 20))) + 8);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -1898,9 +1922,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (175 + (v0.GetValue() * 830));
-		},
-		() => "HideFader",
-		() => "ShowFader"
+		}
 ];
 
 
